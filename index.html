@@ -15,20 +15,20 @@
 <body>
 
   <header class="site-header">
-  <a href="index.html" class="logo">
-    <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
-    <span class="sr-only"> – Retour à l’accueil</span>
-  </a>
+    <a href="index.html" class="logo">
+      <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
+      <span class="sr-only"> – Retour à l’accueil</span>
+    </a>
 
-  <p class="logo-signature">
-    Audit d’accessibilité numérique léger pour sites simples et humains
-  </p>
+    <p class="logo-signature">
+      Audit d’accessibilité numérique léger pour sites simples et humains
+    </p>
 
-  <!-- Toggle Dark Mode -->
-  <button id="dark-mode-toggle" aria-label="Activer / Désactiver le mode sombre" class="btn btn-secondary">
-    Mode sombre
-  </button>
-</header>
+    <!-- Toggle Dark Mode -->
+    <button id="dark-mode-toggle" aria-label="Activer / Désactiver le mode sombre" class="btn btn-secondary">
+      Mode sombre
+    </button>
+  </header>
 
   <main id="contenu-principal">
 
@@ -74,9 +74,16 @@
     <section class="section encadre">
       <h2>Contact</h2>
       <p>Réponse sous quelques jours, sans engagement.</p>
-      <a href="mailto:lahely.na@gmail.com" class="btn btn-primary">
-        Écrire un message
-      </a>
+      <p>
+        Contacte moi par email en cliquant sur le bouton ci-dessous :
+      </p>
+      <input
+  type="text"
+  class="btn btn-primary email-copy"
+  value="numeriqueaccessible@outlook.fr"
+  readonly
+  onclick="this.select(); document.execCommand('copy');"
+/>
     </section>
 
   </main>
@@ -84,9 +91,9 @@
   <footer class="site-footer">
     <p>© Numérique Accessible</p>
   </footer>
-  
+
   <script src="js/dark-mode-toggle.js"></script>
-  
-  </body>
-  
-  </html>
+
+</body>
+
+</html>

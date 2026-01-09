@@ -212,6 +212,23 @@ a { color: var(--color-link); text-decoration: underline; }
 a:hover, a:focus { color: var(--color-link-hover); }
 :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
 
+.email-copy {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.email-copy:focus,
+.email-copy:focus-visible {
+  outline: 3px solid var(--btn-focus-outline-light);
+  outline-offset: 3px;
+}
+/* Sélection texte (bleu lors clic) */
+.email-copy::selection {
+  background: transparent;
+}
 /* =========================
    FOOTER
 ========================= */
