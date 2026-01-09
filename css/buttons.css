@@ -1,0 +1,105 @@
+:root {
+  /* =========================
+     BOUTONS PRIMAIRES
+  ========================= */
+  --btn-primary-bg-light: #7A2E2E;
+  --btn-primary-bg-hover-light: #5F2323;
+  --btn-primary-text-light: #FFFFFF;
+
+  /* =========================
+     BOUTONS SECONDAIRES
+  ========================= */
+  --btn-secondary-bg-light: #3E6F64;
+  --btn-secondary-bg-hover-light: #2F5A50;
+  --btn-secondary-text-light: #FFFFFF;
+
+  /* =========================
+     FOCUS
+  ========================= */
+  --btn-focus-outline-light: #7A2E2E;
+}
+
+body.dark {
+  /* =========================
+     BOUTONS PRIMAIRES – DARK
+  ========================= */
+  --btn-primary-bg-light: #E3A3A3;           /* corail clair sur fond sombre */
+  --btn-primary-bg-hover-light: #C28C8C;     /* hover foncé sur dark */
+  --btn-primary-text-light: #121212;         /* texte sombre sur bouton clair */
+
+  /* =========================
+     BOUTONS SECONDAIRES – DARK
+  ========================= */
+  --btn-secondary-bg-light: #9FC4B8;         /* vert clair sur fond sombre */
+  --btn-secondary-bg-hover-light: #7FA899;   /* hover */
+  --btn-secondary-text-light: #121212;
+
+  /* =========================
+     FOCUS – DARK
+  ========================= */
+  --btn-focus-outline-light: #C2EDFD;        /* outline visible sur dark */
+}
+
+/* ======================================================
+   BUTTONS – ACCESSIBLE & DOUX
+   ====================================================== */
+
+/* =========================
+   BASE BUTTON
+========================= */
+.btn {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+  text-decoration: underline;
+}
+
+/* =========================
+   BOUTONS PRIMAIRES
+========================= */
+.btn-primary {
+  background-color: var(--btn-primary-bg-light);
+  color: var(--btn-primary-text-light);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--btn-primary-bg-hover-light);
+  color: var(--btn-primary-text-light);
+}
+
+/* =========================
+   BOUTONS SECONDAIRES
+========================= */
+.btn-secondary {
+  background-color: var(--btn-secondary-bg-light);
+  color: var(--btn-secondary-text-light);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--btn-secondary-bg-hover-light);
+  color: var(--btn-secondary-text-light);
+}
+
+/* =========================
+   FOCUS CLAVIER (accessibilité)
+========================= */
+.btn:focus-visible {
+  outline: 3px solid var(--btn-focus-outline-light);
+  outline-offset: 3px;
+}
+#dark-mode-toggle {
+  margin-top: var(--space-md);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
