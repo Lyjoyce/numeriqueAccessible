@@ -212,23 +212,38 @@ a { color: var(--color-link); text-decoration: underline; }
 a:hover, a:focus { color: var(--color-link-hover); }
 :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
 
+/* =========================
+   COPIE EMAIL – SÉLECTION TEXTE
+========================= */
 .email-copy {
   appearance: none;
   -webkit-appearance: none;
+
   border: none;
   outline: none;
   box-shadow: none;
+
   cursor: pointer;
+  user-select: all;
+
+  /* Supprime surbrillance mobile */
+  -webkit-tap-highlight-color: transparent;
+
+  /* Supprime curseur texte bleu */
+  caret-color: transparent;
 }
+
 .email-copy:focus,
 .email-copy:focus-visible {
-  outline: 3px solid var(--btn-focus-outline-light);
-  outline-offset: 3px;
+  outline: none;
+  box-shadow: none;
 }
-/* Sélection texte (bleu lors clic) */
+
+/* Supprime fond bleu de sélection */
 .email-copy::selection {
   background: transparent;
 }
+
 /* =========================
    FOOTER
 ========================= */

@@ -75,15 +75,12 @@
       <h2>Contact</h2>
       <p>Réponse sous quelques jours, sans engagement.</p>
       <p>
-        Contacte moi par email en cliquant sur le bouton ci-dessous :
+        Contacte-moi par email en cliquant sur le bouton ci-dessous :
       </p>
-      <input
-  type="text"
-  class="btn btn-primary email-copy"
-  value="numeriqueaccessible@outlook.fr"
-  readonly
-  onclick="this.select(); document.execCommand('copy');"
-/>
+      <label for="email" class="sr-only">Adresse email</label>
+      <input id="email" type="text" class="btn btn-primary email-copy" value="numeriqueaccessible@outlook.fr" readonly
+        onclick="this.select(); this.setSelectionRange(0, 9999); document.execCommand('copy');">
+
     </section>
 
   </main>
