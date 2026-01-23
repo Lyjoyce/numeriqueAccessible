@@ -2,127 +2,136 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Analyste en veille informationnelle santé – Numérique Accessible</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Veille et synthèse sur la fatigue chronique, les pratiques de récupération et la lisibilité cognitive. Information structurée, prudente et accessible.">
+    <meta charset="UTF-8">
+    <title>Analyste en veille informationnelle santé – Numérique Accessible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Veille et synthèse sur la fatigue chronique, les pratiques de récupération et la lisibilité cognitive. Information structurée, prudente et accessible.">
 
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <a href="index.html" class="logo">
-      <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
-      <span class="sr-only"> – Retour à l’accueil</span>
-    </a>
-
-    <p class="logo-signature">
-      Veille & clarification de l’information sur la fatigue chronique
-    </p>
-
-    <button id="dark-mode-toggle" aria-label="Activer / Désactiver le mode sombre" class="btn btn-secondary">
-      Mode sombre
-    </button>
-  </header>
-
-  <main id="contenu-principal">
-
-    <h1>Analyste en veille informationnelle santé</h1>
-
-    <section class="section encadre">
-      <h2>Mon rôle</h2>
-      <p>
-        Je travaille sur la <strong>veille, la synthèse et la structuration</strong>
-        de l’information liée à la fatigue chronique et aux pratiques de récupération.
-      </p>
-      <p>
-        Je ne soigne pas. Je ne prescris pas.
-        <br>
-        Je clarifie, je structure et je rends l’information <strong>lisible et respirable</strong>.
-      </p>
-    </section>
-
-    <section class="section respiration">
-      <h2>Ce que je fais concrètement</h2>
-      <ul>
-        <li>Veille à partir de sources institutionnelles et scientifiques fiables</li>
-        <li>Comparaison et mise en perspective des informations</li>
-        <li>Synthèses claires, prudentes et contextualisées</li>
-        <li>Identification des limites, zones d’incertitude et convergences</li>
-        <li>Attention particulière à la lisibilité et à la fatigue cognitive</li>
-      </ul>
-    </section>
-
-    <section class="section encadre">
-      <h2>Spécialisation</h2>
-      <p>
-        Mon travail se concentre principalement sur :
-      </p>
-      <ul>
-        <li>la fatigue chronique</li>
-        <li>les pratiques de récupération et de gestion de l’énergie</li>
-        <li>la surcharge informationnelle et cognitive</li>
-        <li>l’accessibilité de l’information (structure, clarté, lisibilité)</li>
-      </ul>
-    </section>
-
-    <section class="section respiration">
-      <h2>À qui s’adresse ce travail</h2>
-      <ul>
-        <li>professionnels du bien-être et de la santé non médicaux</li>
-        <li>associations et projets liés aux maladies chroniques</li>
-        <li>créateurs de contenus santé</li>
-        <li>structures souhaitant une information claire et responsable</li>
-      </ul>
-    </section>
-
-    <section class="section encadre">
-      <h2>Cadre et éthique</h2>
-      <p>
-        Mon travail s’appuie sur une <strong>charte de sources</strong> et une approche prudente.
-      </p>
-      <p>
-        Les contenus produits ne remplacent pas un avis médical
-        et ne constituent ni diagnostic, ni traitement, ni recommandation thérapeutique.
-      </p>
-    </section>
-
-    <section class="section respiration">
-      <h2>Autre service</h2>
-      <p>
-        Je propose également, de manière indépendante,
-        un audit d’accessibilité numérique léger, orienté confort utilisateur.
-      </p>
-      <p>
-        <a href="audit-accessibilite.html">
-          Découvrir l’audit d’accessibilité →
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
+            <span class="sr-only"> – Retour à l’accueil</span>
         </a>
-      </p>
-    </section>
 
-    <section class="section encadre">
-      <h2>Contact</h2>
-      <p>
-        Pour une demande d’information ou de collaboration :
-      </p>
+        <p class="logo-signature">
+            Veille & clarification de l’information sur la fatigue chronique
+        </p>
 
-      <label for="email" class="sr-only">Adresse email</label>
-      <input id="email" type="text" class="btn btn-primary email-copy"
-        value="contact@numeriqueaccessible.fr" readonly
-        onclick="this.select(); this.setSelectionRange(0, 9999); document.execCommand('copy');">
-    </section>
+        <button id="dark-mode-toggle" aria-label="Activer / Désactiver le mode sombre" class="btn btn-secondary">
+            Mode sombre
+        </button>
+        <button id="accessibility-toggle" class="btn btn-secondary" aria-pressed="false"
+            aria-label="Activer le mode lecture confortable">
+            Accessibilité
+        </button>
 
-  </main>
+    </header>
 
-  <footer class="site-footer">
-    <p>© Numérique Accessible</p>
-  </footer>
+    <main id="contenu-principal">
 
-  <script src="js/dark-mode-toggle.js"></script>
+        <h1>Analyste en veille informationnelle santé</h1>
+
+        <section class="section encadre">
+            <h2>Mon rôle</h2>
+            <p>
+                Je travaille sur la <strong>veille, la synthèse et la structuration</strong>
+                de l’information liée à la fatigue chronique et aux pratiques de récupération.
+            </p>
+            <p>
+                Je ne soigne pas. Je ne prescris pas.
+                <br>
+                Je clarifie, je structure et je rends l’information <strong>lisible et respirable</strong>.
+            </p>
+        </section>
+
+        <section class="section respiration">
+            <h2>Ce que je fais concrètement</h2>
+            <ul>
+                <li>Veille à partir de sources institutionnelles et scientifiques fiables</li>
+                <li>Comparaison et mise en perspective des informations</li>
+                <li>Synthèses claires, prudentes et contextualisées</li>
+                <li>Identification des limites, zones d’incertitude et convergences</li>
+                <li>Attention particulière à la lisibilité et à la fatigue cognitive</li>
+            </ul>
+        </section>
+
+        <section class="section encadre">
+            <h2>Spécialisation</h2>
+            <p>
+                Mon travail se concentre principalement sur :
+            </p>
+            <ul>
+                <li>la fatigue chronique</li>
+                <li>les pratiques de récupération et de gestion de l’énergie</li>
+                <li>la surcharge informationnelle et cognitive</li>
+                <li>l’accessibilité de l’information (structure, clarté, lisibilité)</li>
+            </ul>
+        </section>
+
+        <section class="section respiration">
+            <h2>À qui s’adresse ce travail</h2>
+            <ul>
+                <li>professionnels du bien-être et de la santé non médicaux</li>
+                <li>associations et projets liés aux maladies chroniques</li>
+                <li>créateurs de contenus santé</li>
+                <li>structures souhaitant une information claire et responsable</li>
+            </ul>
+        </section>
+
+        <section class="section encadre">
+            <h2>Cadre et éthique</h2>
+            <p>
+                Mon travail s’appuie sur une <strong>charte de sources</strong> et une approche prudente.
+            </p>
+            <p>
+                Les contenus produits ne remplacent pas un avis médical
+                et ne constituent ni diagnostic, ni traitement, ni recommandation thérapeutique.
+            </p>
+        </section>
+
+        <section class="section respiration">
+            <h2>Autre service</h2>
+            <p>
+                Je propose également, de manière indépendante,
+                un audit d’accessibilité numérique léger, orienté confort utilisateur.
+            </p>
+            <p>
+                <a href="audit-accessibilite.html">
+                    Découvrir l’audit d’accessibilité →
+                </a>
+            </p>
+        </section>
+
+        <section class="section encadre">
+            <h2>Contact</h2>
+            <p>
+                Pour une demande d’information ou de collaboration :
+            </p>
+
+            <label for="email" class="sr-only">Adresse email</label>
+            <input id="email" type="text" class="btn btn-primary email-copy" value="contact@numeriqueaccessible.fr"
+                readonly onclick="this.select(); this.setSelectionRange(0, 9999); document.execCommand('copy');">
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© Numérique Accessible —
+            <a href="accessibilite.html">Accessibilité</a>
+        </p>
+        <p>© Numérique Accessible</p>
+    </footer>
+
+    <script src="js/dark-mode-toggle.js"></script>
+    <script src="js/accessibility-toggle.js"></script>
 
 </body>
+
 </html>
