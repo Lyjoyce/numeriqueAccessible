@@ -225,6 +225,29 @@ h2 { font-size: 1.4rem; }
 .section.respiration { background-color: var(--color-bg-section-respiration-light); }
 
 /* =========================
+   SCORE
+========================= */
+.score {
+  margin: var(--space-md) 0;
+}
+
+.score p {
+  margin: 0.3rem 0;
+  font-weight: 500;
+}
+
+/* Insights */
+.score-insights {
+  margin-top: var(--space-md);
+  padding-left: 1.2rem;
+}
+
+.score-insights li {
+  margin-bottom: 0.3rem;
+  color: var(--color-text-secondary-light);
+}
+
+/* =========================
    LISTES & TEXTE
 ========================= */
 p { margin-bottom: var(--space-md); }
