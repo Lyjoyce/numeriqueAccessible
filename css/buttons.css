@@ -103,3 +103,17 @@ body.dark {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
 }
+/* =========================
+   MICRO-NOTE
+========================= */
+.micro-note {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary-light);
+  margin-top: 0.5rem;
+}
+
+.copy-feedback {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+}

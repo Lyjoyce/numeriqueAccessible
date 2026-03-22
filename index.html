@@ -149,25 +149,28 @@
       <p>
         Je réponds personnellement, sans engagement.
       </p>
-
-      <label for="email" class="sr-only">Adresse email</label>
       <input id="email" type="text" class="btn btn-primary email-copy" value="contact@numeriqueaccessible.fr" readonly
-        onclick="this.select(); this.setSelectionRange(0, 9999); document.execCommand('copy');">
+        onclick="copyEmail()">
+
+      <p id="copy-feedback" class="copy-feedback" aria-live="polite" hidden>
+        ✔ Adresse copiée
+      </p>
 
     </section>
 
   </main>
 
   <footer class="site-footer">
-  <p>
-    © Numérique Accessible —
-    <a href="accessibilite.html">Accessibilité</a> —
-    <a href="veilles-informationnelles-sante.html">Veilles informationnelles santé</a>
-  </p>
-</footer>
+    <p>
+      © Numérique Accessible —
+      <a href="accessibilite.html">Accessibilité</a> —
+      <a href="veilles-informationnelles-sante.html">Veilles informationnelles santé</a>
+    </p>
+  </footer>
 
   <script src="js/dark-mode-toggle.js"></script>
   <script src="js/accessibility-toggle.js"></script>
+  <script src="js/copyEmail.js"></script>
 
 </body>
 
