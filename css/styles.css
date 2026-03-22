@@ -260,7 +260,16 @@ li { margin-bottom: 0.5rem; }
 a { color: var(--color-link); text-decoration: underline; }
 a:hover, a:focus { color: var(--color-link-hover); }
 :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
-
+/* =========================
+   MICRO PREUVE
+========================= */
+.micro-preuve {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary-light);
+  max-width: 60ch;
+  margin-top: -1rem;
+  margin-bottom: var(--space-lg);
+}
 /* =========================
    COPIE EMAIL – SÉLECTION TEXTE
 ========================= */
