@@ -271,6 +271,14 @@ a:hover, a:focus { color: var(--color-link-hover); }
   margin-bottom: var(--space-lg);
 }
 /* =========================
+   MICRO-NOTE
+========================= */
+.micro-note {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary-light);
+  margin-top: 0.5rem;
+}
+/* =========================
    COPIE EMAIL – SÉLECTION TEXTE
 ========================= */
 .email-copy {
