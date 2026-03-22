@@ -6,11 +6,17 @@ function copyEmail() {
   input.setSelectionRange(0, 9999);
   document.execCommand("copy");
 
-  // Afficher le feedback
+  // Afficher avec fade
   feedback.hidden = false;
+  feedback.classList.add("visible");
 
   // Masquer après 2 secondes
   setTimeout(() => {
-    feedback.hidden = true;
+    feedback.classList.remove("visible");
+
+    // attendre la fin du fade pour cacher
+    setTimeout(() => {
+      feedback.hidden = true;
+    }, 400);
   }, 2000);
 }

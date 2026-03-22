@@ -111,9 +111,19 @@ body.dark {
   color: var(--color-text-secondary-light);
   margin-top: 0.5rem;
 }
+/* =========================
+  COPY-FEEDBACK ANIMATION FADE
+========================= */
 
 .copy-feedback {
   margin-top: 0.5rem;
   font-size: 0.9rem;
   color: var(--color-secondary);
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.copy-feedback.visible {
+  opacity: 1;
 }
