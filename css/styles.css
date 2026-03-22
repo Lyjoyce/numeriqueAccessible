@@ -206,7 +206,7 @@ h1 { font-size: 2rem; margin-bottom: var(--space-lg); }
 h2 { font-size: 1.4rem; }
 
 /* =========================
-   HOOK (accroche sous H1)
+   HOOK (accroche sous H1, haut de page)
 ========================= */
 .hook {
   font-size: 1.1rem;
@@ -261,7 +261,7 @@ a { color: var(--color-link); text-decoration: underline; }
 a:hover, a:focus { color: var(--color-link-hover); }
 :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
 /* =========================
-   MICRO PREUVE
+   MICRO PREUVE : Rassurance
 ========================= */
 .micro-preuve {
   font-size: 0.95rem;
@@ -269,15 +269,19 @@ a:hover, a:focus { color: var(--color-link-hover); }
   max-width: 60ch;
   margin-top: -1rem;
   margin-bottom: var(--space-lg);
+  opacity: 0.9;
 }
+
 /* =========================
-   MICRO-NOTE
+   MICRO-NOTE : Précision douce
 ========================= */
 .micro-note {
   font-size: 0.9rem;
-  color: var(--color-text-secondary-light);
+  color: var(--color-text-primary-light);
   margin-top: 0.5rem;
+  opacity: 0.9;
 }
+
 /* =========================
    COPIE EMAIL – SÉLECTION TEXTE
 ========================= */
@@ -332,3 +336,27 @@ a:hover, a:focus { color: var(--color-link-hover); }
   .section { padding: var(--space-xl); }
   .site-footer { padding: var(--space-lg) 0; }
 }
+
+/*
+La hiérarchie visuelle : 3 rôles visuels différents mais simples
+// /Accroche (haut de page) 
+.hook {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary-light);
+  max-width: 60ch;
+}
+
+// Rassurance 
+.micro-preuve {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary-light);
+  opacity: 0.9;
+}
+
+// Précision douce 
+.micro-note {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary-light);
+  opacity: 0.8;
+}
+*/
