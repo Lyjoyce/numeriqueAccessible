@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Articles de veille – Numérique Accessible</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Articles de veille informationnelle sur la fatigue chronique et la lisibilité cognitive.">
+  <meta name="description"
+    content="Articles de veille informationnelle sur la fatigue chronique et la lisibilité cognitive.">
 
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/buttons.css">
 </head>
 
 <body>
 
-<header class="site-header">
-  <a href="../index.html" class="logo">
-    <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
-    <span class="sr-only"> – Retour à l’accueil</span>
-  </a>
-</header>
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
+      <span class="sr-only"> – Retour à l’accueil</span>
+    </a>
 
-<main id="contenu-principal">
+    <button id="dark-mode-toggle" aria-label="Activer / Désactiver le mode sombre" class="btn btn-secondary">
+      Mode sombre
+    </button>
+    <button id="accessibility-toggle" class="btn btn-secondary" aria-pressed="false"
+      aria-label="Activer le mode lecture confortable">
+      Lecture confortable
+    </button>
+  </header>
 
-  <h1>Articles de veille</h1>
 
-  <section class="section encadre">
-    <article>
-      <h2>
-        <a href="fatigue-chronique.html">
-          De quoi parle-t-on quand on dit « fatigue chronique » ?
-        </a>
-      </h2>
-      <p>
-        Article de cadrage fondamental — Janvier.
-        Clarification institutionnelle du terme « fatigue chronique ».
-      </p>
-    </article>
-  </section>
 
-</main>
+  <main id="contenu-principal">
 
-<footer class="site-footer">
-  <p>
-    © Numérique Accessible —
-    <a href="../index.html">Accueil Diagnostic de lisibilité et de confort web</a> —
-    <a href="../articles/veilles-sante.html">Veille santé</a>
-  </p>
-</footer>
+    <h1>Articles de veille</h1>
+
+    <section class="section encadre">
+      <article>
+        <h2>
+          <a href="fatigue-chronique.html">
+            De quoi parle-t-on quand on dit « fatigue chronique » ?
+          </a>
+        </h2>
+        <p>
+          Article de cadrage fondamental — Janvier.
+          Clarification institutionnelle du terme « fatigue chronique ».
+        </p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      © Numérique Accessible —
+      <a href="../index.html">Accueil Diagnostic de lisibilité et de confort web</a> —
+      <a href="../articles/veilles-sante.html">Veille santé</a>
+    </p>
+  </footer>
+  <script src="js/dark-mode-toggle.js"></script>
+  <script src="js/accessibility-toggle.js"></script>
 
 </body>
+
 </html>
