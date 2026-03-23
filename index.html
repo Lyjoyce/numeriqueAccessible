@@ -175,10 +175,11 @@
         Tarif : 49 €
       </p>
 
-      <p><strong>Adresse email (cliquez pour copier) :</strong></p>
+      
+      <label for="email"><strong>Adresse email (cliquez pour copier) :</strong></label>
 
       <input id="email" type="text" class="btn btn-primary email-copy" value="contact@numeriqueaccessible.fr" readonly
-        onclick="copyEmail()">
+        aria-label="Adresse email à copier" onclick="copyEmail()">
 
       <p id="copy-feedback" class="copy-feedback" aria-live="polite" hidden>
         ✔ Adresse copiée
