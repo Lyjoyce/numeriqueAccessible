@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnostic de lisibilité et de confort web – Numérique Accessible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Diagnostic de lisibilité et de confort web pour sites de thérapeutes. Améliorez la clarté, la fluidité et le confort de lecture.">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
+            <span class="sr-only"> – Retour à l’accueil</span>
+        </a>
+
+        <p class="logo-signature">
+            Diagnostic de lisibilité et de confort numérique pour votre site
+        </p>
+
+        <button id="dark-mode-toggle" aria-label="Activer / Désactiver le mode sombre" class="btn btn-secondary">
+            Mode sombre
+        </button>
+        <button id="accessibility-toggle" class="btn btn-secondary" aria-pressed="false"
+            aria-label="Activer le mode lecture confortable">
+            Lecture confortable
+        </button>
+
+    </header>
+
+    <main id="contenu-principal">
+
+        <h1>Confidentialité</h1>
+
+        <p class="hook">
+            Ce site a été conçu pour être simple, lisible… et respectueux de votre navigation.
+        </p>
+
+        <section class="section encadre">
+            <h2>Données personnelles</h2>
+            <p>
+                Ce site ne collecte pas de données personnelles.
+            </p>
+            <p>
+                Aucun formulaire, aucun suivi, aucune information nominative n’est enregistrée.
+            </p>
+        </section>
+
+        <section class="section respiration">
+            <h2>Cookies</h2>
+            <p>
+                Ce site n’utilise pas de cookies de suivi ou de mesure d’audience.
+            </p>
+            <p>
+                Votre navigation reste anonyme.
+            </p>
+        </section>
+
+        <section class="section encadre">
+            <h2>Hébergement</h2>
+            <p>
+                Le site est hébergé par un prestataire technique standard.
+            </p>
+            <p>
+                Certaines données techniques (comme l’adresse IP) peuvent être temporairement
+                enregistrées par l’hébergeur à des fins de sécurité.
+            </p>
+        </section>
+
+        <section class="section respiration">
+            <h2>Contact</h2>
+            <p>
+                Si vous souhaitez me contacter, vous pouvez utiliser l’adresse email présente sur le site.
+            </p>
+            <p>
+                Les échanges se font directement, sans stockage ni traitement automatisé des données.
+            </p>
+        </section>
+        <p class="micro-preuve">
+            Ce choix s’inscrit dans une démarche de sobriété numérique et de respect de l’attention.
+        </p>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            © Numérique Accessible —
+            <a href="accessibilite.html">Accessibilité</a>
+        </p>
+    </footer>
+    <script src="js/dark-mode-toggle.js"></script>
+    <script src="js/accessibility-toggle.js"></script>
+</body>
+
+</html>
