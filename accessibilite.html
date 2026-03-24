@@ -8,16 +8,31 @@
     content="Déclaration d’accessibilité et informations de conformité RGAA / WCAG.">
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/buttons.css">
 </head>
 
 <body>
 
 <header class="site-header">
-  <a href="index.html" class="logo">
-    <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
-    <span class="sr-only"> – Retour à l’accueil</span>
-  </a>
-</header>
+        <a href="index.html" class="logo">
+            <span class="logo-num">numérique</span><span class="logo-acc">Accessible</span>
+            <span class="sr-only"> – Retour à l’accueil</span>
+        </a>
+
+        <p class="logo-signature">
+            Diagnostic de lisibilité et de confort numérique pour votre site
+        </p>
+
+        <button id="dark-mode-toggle" aria-label="Activer / Désactiver le mode sombre" class="btn btn-secondary">
+            Mode sombre
+        </button>
+        <button id="accessibility-toggle" class="btn btn-secondary" aria-pressed="false"
+            aria-label="Activer le mode lecture confortable">
+            Lecture confortable
+        </button>
+
+    </header>
+
 
 <main id="contenu-principal">
 
@@ -85,8 +100,24 @@
 </main>
 
 <footer class="site-footer">
-  <p>© Numérique Accessible</p>
-</footer>
+    <p>
+      © Numérique Accessible —
+      <a href="accessibilite.html">Accessibilité</a>
+    </p>
+    <p>
+      <a href="veilles-informationnelles-sante.html">
+        Veille informationnelle santé (autre activité)
+      </a>
+    </p>
+    <p>
+      <a href="confidentialite.html">Confidentialité</a>
+    </p>
+  </footer>
+
+  <script src="js/dark-mode-toggle.js"></script>
+  <script src="js/accessibility-toggle.js"></script>
+  <script src="js/copyEmail.js"></script>
 
 </body>
+
 </html>
