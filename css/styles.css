@@ -317,8 +317,16 @@ a:hover, a:focus { color: var(--color-link-hover); }
 /* =========================
    FOOTER
 ========================= */
-.site-footer { max-width: 800px; margin: auto; padding: var(--space-lg) var(--space-md); font-size: 0.9rem; color: var(--color-text-secondary-light); }
+.site-footer { max-width: 800px; margin: auto; 
+  padding: var(--space-lg) var(--space-md); font-size: 0.9rem; color: var(--color-text-secondary-light); }
 
+.footer-nav{
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
 /* =========================
    RESPONSIVE DESKTOP
 ========================= */
