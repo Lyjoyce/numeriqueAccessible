@@ -9,7 +9,11 @@
     content="Diagnostic de lisibilité et de confort web pour sites de thérapeutes. Améliorez la clarté, la fluidité et le confort de lecture.">
 
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="preload" href="/css/buttons.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="/css/buttons.css">
+  </noscript>
+  
 </head>
 
 <body>
@@ -206,12 +210,12 @@
       </a>
       <a href="confidentialite.html">Confidentialité</a>
     </nav>
-    
+
   </footer>
 
-  <script src="js/dark-mode-toggle.js"></script>
-  <script src="js/accessibility-toggle.js"></script>
-  <script src="js/copyEmail.js"></script>
+  <script src="/js/dark-mode-toggle.js" defer></script>
+  <script src="/js/accessibility-toggle.js" defer></script>
+  <script src="/js/copyEmail.js" defer></script>
 
 </body>
 
