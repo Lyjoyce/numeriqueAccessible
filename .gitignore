@@ -1,10 +1,24 @@
+diagnostic/
 internes/
-diagnostic/internes/modele-interne-diagnostic.html
-diagnostic/internes/brouillon-client.html
+modele-interne-diagnostic.html
+brouillon-client.html
 praticiens/
+exemples-diagnostic.html
 
-indices-ultrapuissants/indices-ultrapuissants.html
+indices-ultrapuissants/
+indices-ultrapuissants.html
 indices-ultrapuissants/indices-ultrapuissants.js
 indices-experts/
 indices-experts/indices-experts.html
 indices-experts/indices-experts.js
+
+wcag-audit/
+  perceptible.html
+  utilisable.html
+  comprehensible.html
+  robuste.html
+
+boussole_de_clarte_personnelle
+boussole_clarte.html
+boussole_clarte.js
+  
